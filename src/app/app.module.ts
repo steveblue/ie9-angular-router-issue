@@ -1,18 +1,24 @@
+import { NgModule }      from '@angular/core';
+import { CommonModule }  from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-
-import { AppComponent } from './app.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppComponent }  from './app.component';
+import { routing }       from './app.routes';
+import { HomeModule } from './shared/components/home/home.module';
+import { LazyModule } from './shared/components/lazy/lazy.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+    imports: [ BrowserModule,
+               BrowserAnimationsModule,
+               CommonModule,
+               HttpClientModule,
+               HomeModule,
+               LazyModule,
+               routing],
+    declarations: [ AppComponent ],
+    bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+
+export class AppModule {}
