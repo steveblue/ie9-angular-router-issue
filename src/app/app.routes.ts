@@ -9,4 +9,4 @@ const routes: Routes = [
   { path: 'lazy', component: LazyComponent }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const routing: ModuleWithProviders = RouterModule.forRoot(routes, {useHash: true});
