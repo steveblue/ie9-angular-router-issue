@@ -2,15 +2,16 @@
 
 The project can be built with the `@angular/cli` or `angular-rollup`.
 
-`npm install`
-`ngr build dev --watch --serve`
+- `npm install`
+- `ngr build dev --watch --serve`
 
-Open IE9 in Windows 7
-Open `http://localhost:4200` observe app loads.
-Click the Angular logo or manually route to /lazy in the address bar
-Observe error in console `SCRIPT438: Object doesn't support property or method 'apply' `
+- Open IE9 in Windows 7
+- Open `http://localhost:4200`
+- Observe app loads
+- Click the Angular logo or manually route to /lazy in the address bar
+- Observe error in console `SCRIPT438: Object doesn't support property or method 'apply' `
 
-If you inspect ZoneTask you will find the `@angular/router` is passing `null` to Zone instead of an Object, throwing the Error above.
+If you inspect ZoneTask you will find the `@angular/router` is passing `null` to Zone instead of an Object, throwing the Error.
 
 ```
     var ZoneTask = /** @class */ (function () {
