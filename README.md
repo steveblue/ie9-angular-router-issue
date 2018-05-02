@@ -1,9 +1,9 @@
-# ie9-issue
+# ie9-angular-router-issue
 
 The project can be built with the `@angular/cli` or `angular-rollup`.
 
-- `npm install`
-- `ngr build dev --watch --serve`
+- `npm install || yarn install`
+- `ng serve || ngr build dev --watch --serve`
 
 - Open IE9 in Windows 7
 - Open `http://localhost:4200`
